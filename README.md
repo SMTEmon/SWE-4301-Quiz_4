@@ -1,22 +1,30 @@
-# SOLID design principles
+# SWE-4301 Quiz 4 / Assignment 2: SOLID Principles Refactoring
 
-This repository contains examples that violate the SOLID principles:
+**Name:** S.M. Tahsinuzzaman Emon    
+**Student ID:** 230042104    
+**Course:** SWE-4301  
+**Task:** Assignment 2 / Quiz 4  
+**Language:** Java  
 
-- Single Responsibility Principle: Every class should have a single responsibility. A class should have one, and only
- one, reason to change. 
+## Description
+This repository contains refactored implementations for five Java projects. The original codebase contained various violations of the SOLID principles of object-oriented design. The primary objective of this assignment was to identify these design flaws and refactor the code to strictly adhere to SOLID standards, ensuring better maintainability, scalability, and structural integrity.
 
-- Open/Closed Principle: You should be able to extend a classes behavior, without modifying it. Software entities 
-should be open for extension, but closed for modification.
+## SOLID Principles Applied
+The following principles were implemented throughout the refactoring process:
+- **Single Responsibility Principle (SRP):** Ensuring that each class has a single, well-defined purpose and only one reason to change.
+- **Open/Closed Principle (OCP):** Ensuring software entities are open for extension but closed for modification.
+- **Liskov Substitution Principle (LSP):** Ensuring that objects of a superclass can be replaced with objects of its subclasses without affecting the correctness of the program.
+- **Interface Segregation Principle (ISP):** Splitting large interfaces into smaller, more specific ones so that clients only need to know about the methods that are of interest to them.
+- **Dependency Inversion Principle (DIP):** Ensuring that high-level modules do not depend on low-level modules, but rather both depend on abstractions.
 
-- Liskov Substitution Principle: Derived classes must be substitutable for their base classes. Functions that use references to base classes must be able to use objects of derived classes without knowing it.
+## Technologies Used
+- Java
 
-- Interface Segregation Principle: Make fine grained interfaces that are client specific. Clients should not be 
-forced to depend on interfaces they do not use.
-
-- Dependency Inversion Principle: Depend on abstractions, not on concretions. High-level modules should not depend on
- low-level modules. Both should depend on abstractions.   Abstractions should not depend on details. Details should 
- depend on abstractions.
-
-The objective is modify each of the examples in order to not violate the corresponding SOLID principle.
-
-## You can see solution adopted to every problem in a separated branch.
+## How to Review the Code
+To review the refactored projects, please follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SMTEmon/SWE-4301-Quiz_4.git
+   ```
+2. Open the project in a Java IDE of your choice (such as IntelliJ IDEA, Eclipse, or VS Code).
+3. Navigate through the individual project folders to examine the refactored classes and interfaces.
